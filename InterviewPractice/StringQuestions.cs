@@ -10,6 +10,8 @@ namespace InterviewPractice
     [TestFixture]
     public class StringQuestions
     {
+        #region FizzBuzz
+
         [TestCase("Fizz",3)]
         [TestCase("Buzz", 5)]
         [TestCase("FizzBuzz", 15)]
@@ -29,6 +31,10 @@ namespace InterviewPractice
 
             return string.Empty;
         }
+
+        #endregion
+
+        #region RomanNumbers
 
         /// <summary>
         /// Ⅰ（1）、Ⅴ（5）、Ⅹ（10）、Ⅼ（50）、Ⅽ（100）、Ⅾ（500）和 Ⅿ（1000）
@@ -93,6 +99,10 @@ namespace InterviewPractice
             }
         }
 
+        #endregion
+
+        #region NonRepeatingCharacter
+
         /// <summary>
         /// 取得非重複字元 O(n)
         /// </summary>
@@ -129,6 +139,10 @@ namespace InterviewPractice
 
             return string.Empty;
         }
+
+        #endregion
+
+        #region OneAwayStrings
 
         /// <summary>
         /// 檢查 2 字串是否差異 1 個字 O(n)
@@ -222,5 +236,7 @@ namespace InterviewPractice
 
             return true;
         }
+
+        #endregion
     }
 }

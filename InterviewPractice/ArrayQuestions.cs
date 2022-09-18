@@ -11,6 +11,8 @@ namespace InterviewPractice
     [TestFixture]
     public class ArrayQuestions
     {
+        #region CommonElementsInTwoSortedArrays
+
         /// <summary>
         /// 取得 2 已排序陣列內共同項目
         /// </summary>
@@ -58,6 +60,9 @@ namespace InterviewPractice
             return res;
         }
 
+        #endregion
+
+        #region IsOneArrayARotationOfAnother
 
         /// <summary>
         /// 一個陣列是另一個陣列的旋轉嗎 O(n)
@@ -109,6 +114,10 @@ namespace InterviewPractice
             return true;
         }
 
+        #endregion
+
+        #region MostFrequentlyOccurringItem
+
         /// <summary>
         /// 取得 Array 中最常出現項目 O(n)
         /// </summary>
@@ -157,5 +166,7 @@ namespace InterviewPractice
 
             return res;
         }
+
+        #endregion
     }
 }
