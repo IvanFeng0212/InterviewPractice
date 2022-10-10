@@ -53,6 +53,8 @@ namespace FAANG
         }
 
         /// <summary>
+        /// 尋找陣列中 2 數值相家為目標值的 Index
+        /// 陣列為空、僅有一個數值、相加後都與目標值不符，回傳 null
         /// 解法 1 ，時間複雜度 = O(n次方)，空間複雜度 = O(1)
         /// </summary>
         private int[]? Solution(int[] nums,int target) 
@@ -76,6 +78,8 @@ namespace FAANG
         }
 
         /// <summary>
+        /// 尋找陣列中 2 數值相家為目標值的 Index
+        /// 陣列為空、僅有一個數值、相加後都與目標值不符，回傳 null
         /// 解法 2 ，時間複雜度 = O(n)，空間複雜度 = O(n)
         /// </summary>
         private int[]? Solution2(int[] nums, int target)
