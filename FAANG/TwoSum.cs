@@ -7,47 +7,47 @@ namespace FAANG
     public class TwoSum
     {
         [Test]
-        public void Test1()
+        public void TwoSumTest()
         {
             var nums = new[] { 1, 3, 7, 9, 2 };
 
-            var res = Solution(nums, 11);
+            var res = TwoSum1(nums, 11);
 
             Assert.AreEqual(new[] {3,4}, res);
 
-            res = Solution(nums, 25);
+            res = TwoSum1(nums, 25);
 
             Assert.AreEqual(null, res);
 
-            res = Solution(new int[] { }, 1);
+            res = TwoSum1(new int[] { }, 1);
 
             Assert.AreEqual(null, res);
 
-            res = Solution(new int[] { 5 }, 5);
+            res = TwoSum1(new int[] { 5 }, 5);
 
             Assert.AreEqual(null, res);
 
-            res = Solution(new int[] { 1,6 }, 7);
+            res = TwoSum1(new int[] { 1,6 }, 7);
 
             Assert.AreEqual(new[] { 0, 1 }, res);
 
-            res = Solution2(nums, 11);
+            res = TwoSum2(nums, 11);
 
             Assert.AreEqual(new[] { 3, 4 }, res);
 
-            res = Solution2(nums, 25);
+            res = TwoSum2(nums, 25);
 
             Assert.AreEqual(null, res);
 
-            res = Solution2(new int[] { }, 1);
+            res = TwoSum2(new int[] { }, 1);
 
             Assert.AreEqual(null, res);
 
-            res = Solution2(new int[] { 5 }, 5);
+            res = TwoSum2(new int[] { 5 }, 5);
 
             Assert.AreEqual(null, res);
 
-            res = Solution2(new int[] { 1, 6 }, 7);
+            res = TwoSum2(new int[] { 1, 6 }, 7);
 
             Assert.AreEqual(new[] { 0, 1 }, res);
         }
@@ -57,7 +57,7 @@ namespace FAANG
         /// 陣列為空、僅有一個數值、相加後都與目標值不符，回傳 null
         /// 解法 1 ，時間複雜度 = O(n次方)，空間複雜度 = O(1)
         /// </summary>
-        private int[]? Solution(int[] nums,int target) 
+        private int[]? TwoSum1(int[] nums,int target) 
         {
             if(nums == null || nums.Length < 2) return null;
 
@@ -82,7 +82,7 @@ namespace FAANG
         /// 陣列為空、僅有一個數值、相加後都與目標值不符，回傳 null
         /// 解法 2 ，時間複雜度 = O(n)，空間複雜度 = O(n)
         /// </summary>
-        private int[]? Solution2(int[] nums, int target)
+        private int[]? TwoSum2(int[] nums, int target)
         {
             // var nums = new[] { 1, 3, 7, 9, 2 };
             // target = 11
